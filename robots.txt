@@ -1,4 +1,13 @@
+# Lungora Review - Robots.txt
+# Allow all search engines and AI crawlers full access to render the site
+
 User-agent: *
 Allow: /
 
-Sitemap: https://us-lungoraa.com/sitemap.xml
+# Block access to raw system files or private directories if you have them
+Disallow: /config.json
+Disallow: /.git/
+Disallow: /.env
+
+# Sitemap location
+Sitemap: https://lungora-review.com/sitemap.xml

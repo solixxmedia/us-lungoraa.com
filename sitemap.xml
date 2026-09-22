@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Main Review Page (Highest Priority) -->
+  <url>
+    <loc>https://lungora-review.com/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-    <url>
-        <loc>https://us-lungoraa.com/</loc>
-        <lastmod>2026-09-08</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://lungora-review.com/privacy-policy.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
-    <url>
-        <loc>https://us-lungoraa.com/terms.html</loc>
-        <lastmod>2026-09-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://lungora-review.com/terms-conditions.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
-    <url>
-        <loc>https://us-lungoraa.com/disclaimer.html</loc>
-        <lastmod>2026-09-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    <url>
-        <loc>https://us-lungoraa.com/privacy.html</loc>
-        <lastmod>2026-09-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
+  <!-- Disclaimer -->
+  <url>
+    <loc>https://lungora-review.com/disclaimer.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
 </urlset>
