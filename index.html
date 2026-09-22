@@ -43,11 +43,47 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://us-lungoraa.com/#website",
+      "url": "https://us-lungoraa.com/",
+      "name": "Lungora Review",
+      "publisher": {"@id": "https://us-lungoraa.com/#organization"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://us-lungoraa.com/#organization",
+      "name": "Lungora Research Desk",
+      "url": "https://us-lungoraa.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://us-lungoraa.com/images/logo.png"
+      },
+      "description": "Independent editorial review desk covering respiratory wellness supplements.",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@us-lungoraa.com"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://us-lungoraa.com/#webpage",
+      "url": "https://us-lungoraa.com/",
+      "name": "Lungora Review 2026: Ingredients, Side Effects & Pricing",
+      "description": "Independent 2026 review of Lungora: 6 respiratory ingredients, drug interaction cautions, and current pricing.",
+      "isPartOf": {"@id": "https://us-lungoraa.com/#website"},
+      "about": {"@id": "https://us-lungoraa.com/#product"},
+      "datePublished": "2026-01-15",
+      "dateModified": "2026-09-22"
+    },
+    {
       "@type": "Product",
       "@id": "https://us-lungoraa.com/#product",
       "name": "Lungora",
+      "sku": "LUNGORA-6ING-2026",
       "image": "https://us-lungoraa.com/images/lungora-bottle.png",
-      "description": "Once-daily capsule with six named ingredients (Magnesium Glycinate, Alpha Lipoic Acid, Butcher's Broom, L-Carnitine, Turmeric, CoQ10) across nerve, circulation and antioxidant pathways.",
+      "description": "Once-daily capsule with six named ingredients across nerve, circulation and antioxidant pathways.",
       "brand": {"@type": "Brand", "name": "Lungora"},
       "offers": {
         "@type": "AggregateOffer",
@@ -61,31 +97,26 @@
         "@type": "AggregateRating",
         "ratingValue": "4.8",
         "reviewCount": "3200",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": {
-        "@type": "Review",
-        "author": {"@type": "Organization", "name": "Lungora Research Desk"},
-        "datePublished": "2026-09-22",
-        "reviewBody": "An independent analysis of Lungora's respiratory formula, noting strong transparency on ingredient naming but highlighting necessary interaction cautions for users on blood thinners or diabetes medication.",
-        "reviewRating": {"@type": "Rating", "ratingValue": "4.8", "bestRating": "5"}
+        "bestRating": "5"
       }
     },
     {
       "@type": "Article",
       "@id": "https://us-lungoraa.com/#article",
       "headline": "Lungora Review 2026: Ingredients, Side Effects & Pricing",
-      "description": "Independent review of Lungora respiratory supplement, covering mechanism, safety, and value.",
-      "author": {"@type": "Organization", "name": "Lungora Research Desk"},
-      "publisher": {
-        "@type": "Organization",
-        "name": "Lungora Review",
-        "logo": {"@type": "ImageObject", "url": "https://us-lungoraa.com/logo.png"}
-      },
+      "description": "Independent review of Lungora respiratory supplement covering mechanism, safety, and value.",
+      "image": "https://us-lungoraa.com/images/lungora-bottle.png",
+      "author": {"@id": "https://us-lungoraa.com/#organization"},
+      "publisher": {"@id": "https://us-lungoraa.com/#organization"},
       "datePublished": "2026-01-15",
       "dateModified": "2026-09-22",
-      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://us-lungoraa.com/"}
+      "mainEntityOfPage": {"@id": "https://us-lungoraa.com/#webpage"},
+      "wordCount": 1726,
+      "articleSection": "Supplement Review",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".lg-answer", ".lg-lede"]
+      }
     },
     {
       "@type": "FAQPage",
@@ -93,22 +124,38 @@
         {
           "@type": "Question",
           "name": "What is Lungora and how does it work?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Lungora is a once-daily respiratory wellness capsule containing 6 named ingredients: Magnesium Glycinate, Alpha Lipoic Acid, Butcher's Broom, L-Carnitine, Turmeric (95% curcuminoids), and CoQ10. It works across three pathways: nerve signaling, circulation, and antioxidant defense to support everyday vitality and lung comfort."}
+          "text": "What is Lungora and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lungora is a once-daily respiratory wellness capsule containing 6 named ingredients: Magnesium Glycinate, Alpha Lipoic Acid, Butcher's Broom, L-Carnitine, Turmeric (95% curcuminoids), and CoQ10. It works across three pathways: nerve signaling, circulation, and antioxidant defense."
+          }
         },
         {
           "@type": "Question",
-          "name": "Are there any drug interactions with Lungora?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes, caution is advised. Turmeric and CoQ10 may affect bleeding (consult a doctor if on blood thinners). Alpha Lipoic Acid may affect blood sugar (caution with diabetes medication). Butcher's Broom may affect blood pressure. Always consult a physician before starting if you take prescription medications."}
+          "name": "Are there drug interactions with Lungora?",
+          "text": "Are there drug interactions with Lungora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Turmeric and CoQ10 may affect bleeding (blood thinners). Alpha Lipoic Acid may affect blood sugar (diabetes meds). Butcher's Broom may affect blood pressure. Consult a doctor before use."
+          }
         },
         {
           "@type": "Question",
           "name": "How much does Lungora cost?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Lungora pricing ranges from $49 to $79 per bottle depending on the bundle. The 6-bottle bundle offers the lowest per-bottle price ($49/bottle) and includes free US shipping, while the 2-bottle starter package is $79/bottle plus shipping."}
+          "text": "How much does Lungora cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lungora ranges from $49 to $79 per bottle. The 6-bottle bundle is $49/bottle with free US shipping; the 2-bottle starter is $79/bottle plus shipping."
+          }
         },
         {
           "@type": "Question",
           "name": "Does Lungora have a money-back guarantee?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Yes, Lungora is backed by a 60-day money-back guarantee. If you are not satisfied, you can contact the seller within 60 days of your purchase date for a full refund."}
+          "text": "Does Lungora have a money-back guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Lungora comes with a 60-day money-back guarantee. Contact the seller within 60 days of purchase for a full refund."
+          }
         }
       ]
     }
